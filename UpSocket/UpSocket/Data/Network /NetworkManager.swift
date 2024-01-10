@@ -11,6 +11,8 @@ import Combine
 
 class NetworkManager {
     
+    var candleModels: [CandleModel] = []
+    var currentData: [CoinModel] = []
     static let shared = NetworkManager()
     
     private init() { }

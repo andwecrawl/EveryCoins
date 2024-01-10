@@ -81,6 +81,7 @@ class FeedViewModel: ObservableObject {
                 self.showingCoinList = self.coinList
                 
                 WalletManager.shared.coinModels = list
+                NetworkManager.shared.currentData = list.filter { $0.marketCode == "KRW-BTC" }
                 self.coinCodes = list.map { $0.marketCode }
                 
                 self.manageSocket()

@@ -29,6 +29,10 @@
 		D17331472B49398300A2AE99 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151FD922B467D2D00CDF9A8 /* SocketManager.swift */; };
 		D17331492B4939BD00A2AE99 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D17331482B4939BD00A2AE99 /* Alamofire */; };
 		D173314A2B4939CE00A2AE99 /* OrderBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F393532B48DF9600239BFD /* OrderBookModel.swift */; };
+		D173314F2B4BC06D00A2AE99 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173314E2B4BC06C00A2AE99 /* ChartView.swift */; };
+		D17331502B4BC06D00A2AE99 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D173314E2B4BC06C00A2AE99 /* ChartView.swift */; };
+		D17331522B4BC3CF00A2AE99 /* CandleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17331512B4BC3CF00A2AE99 /* CandleModel.swift */; };
+		D17331532B4BC3CF00A2AE99 /* CandleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17331512B4BC3CF00A2AE99 /* CandleModel.swift */; };
 		D1F3932B2B48224300239BFD /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3932A2B48224300239BFD /* CoinModel.swift */; };
 		D1F3932D2B48289F00239BFD /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3932C2B48289F00239BFD /* Double+.swift */; };
 		D1F393322B483C3800239BFD /* Phosphate.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D1F393312B483C3800239BFD /* Phosphate.ttc */; };
@@ -57,6 +61,7 @@
 		D1F393732B49316000239BFD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F393722B49316000239BFD /* AppIntent.swift */; };
 		D1F393752B49316100239BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F393742B49316100239BFD /* Assets.xcassets */; };
 		D1F393792B49316100239BFD /* CoinWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D1F393652B49315F00239BFD /* CoinWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1F892F42B4C2A3100801B48 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3932C2B48289F00239BFD /* Double+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,8 @@
 		D151FD942B46816B00CDF9A8 /* SocketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketResponse.swift; sourceTree = "<group>"; };
 		D173313F2B4936EF00A2AE99 /* CoinWidgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoinWidgetsExtension.entitlements; sourceTree = "<group>"; };
 		D17331432B49376E00A2AE99 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		D173314E2B4BC06C00A2AE99 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		D17331512B4BC3CF00A2AE99 /* CandleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleModel.swift; sourceTree = "<group>"; };
 		D1F3932A2B48224300239BFD /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		D1F3932C2B48289F00239BFD /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		D1F393312B483C3800239BFD /* Phosphate.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Phosphate.ttc; sourceTree = "<group>"; };
@@ -180,6 +187,7 @@
 				D1F393332B483CAF00239BFD /* Info.plist */,
 				D10F4C8C2B3C043600B574A6 /* UpSocketApp.swift */,
 				D151FD8C2B45C3ED00CDF9A8 /* TabBarView.swift */,
+				D173314E2B4BC06C00A2AE99 /* ChartView.swift */,
 				D1F393502B48C43600239BFD /* Wallet */,
 				D1F3933D2B48910500239BFD /* Login */,
 				D1F393342B488EEE00239BFD /* Feed */,
@@ -217,6 +225,7 @@
 				D10F4CA02B3C37A700B574A6 /* MarketName.swift */,
 				D151FD942B46816B00CDF9A8 /* SocketResponse.swift */,
 				D1F393532B48DF9600239BFD /* OrderBookModel.swift */,
+				D17331512B4BC3CF00A2AE99 /* CandleModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -481,8 +490,10 @@
 				D10F4C8D2B3C043600B574A6 /* UpSocketApp.swift in Sources */,
 				D1F393582B49001100239BFD /* SideView.swift in Sources */,
 				D1F393602B491EDC00239BFD /* Color+.swift in Sources */,
+				D173314F2B4BC06D00A2AE99 /* ChartView.swift in Sources */,
 				D151FD8D2B45C3ED00CDF9A8 /* TabBarView.swift in Sources */,
 				D10F4CA12B3C37A700B574A6 /* MarketName.swift in Sources */,
+				D17331522B4BC3CF00A2AE99 /* CandleModel.swift in Sources */,
 				D1F3935C2B491E2B00239BFD /* WalletDetailView.swift in Sources */,
 				D1F393562B48F12000239BFD /* BarGraphView.swift in Sources */,
 				D1F393522B48C44F00239BFD /* WalletView.swift in Sources */,
@@ -506,12 +517,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17331532B4BC3CF00A2AE99 /* CandleModel.swift in Sources */,
 				D17331412B49372100A2AE99 /* NetworkManager.swift in Sources */,
 				D1F3936D2B49316000239BFD /* CoinWidgetsBundle.swift in Sources */,
 				D1F393732B49316000239BFD /* AppIntent.swift in Sources */,
 				D1F3936F2B49316000239BFD /* CoinWidgetsLiveActivity.swift in Sources */,
+				D17331502B4BC06D00A2AE99 /* ChartView.swift in Sources */,
 				D17331472B49398300A2AE99 /* SocketManager.swift in Sources */,
 				D17331462B49395500A2AE99 /* Router.swift in Sources */,
+				D1F892F42B4C2A3100801B48 /* Double+.swift in Sources */,
 				D17331402B49371B00A2AE99 /* MarketName.swift in Sources */,
 				D173314A2B4939CE00A2AE99 /* OrderBookModel.swift in Sources */,
 				D1F393712B49316000239BFD /* CoinWidgets.swift in Sources */,

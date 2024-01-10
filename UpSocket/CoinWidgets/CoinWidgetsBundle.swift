@@ -12,6 +12,7 @@ import SwiftUI
 struct CoinWidgetsBundle: WidgetBundle {
     var body: some Widget {
         CoinWidgets()
+        TextWidget()
         CoinWidgetsLiveActivity()
     }
 }

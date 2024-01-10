@@ -43,7 +43,7 @@ struct WalletDetailView: View {
                 }
                 Spacer()
                 VStack(alignment: .trailing, content: {
-                    Text("현재가: \(currentWallet.tradePrice.toFormattedString())")
+                    Text("현재가: \(currentWallet.tradePrice.toString())")
                     Text("전일대비: \(currentWallet.change.percentToString())")
                     Text("\(currentWallet.changePrice.toString())")
                 })
