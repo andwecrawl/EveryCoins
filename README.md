@@ -28,7 +28,6 @@
 - **SwiftUI와 Combine, MVVM**을 이용하여 **인터페이스와 로직이 명확히 분리**된 **반응형 UI**를 구현했습니다.
 - **WebSocket** 통신을 이용하여 실시간으로 데이터가 변화하는 **List와 Bar/Line Charts**를 구현했습니다.
 - `@Namespace`와 `machedGeometryEffect` 함수를 활용하여 사용자의 Interaction에 따라 자연스럽게 객체가 이동하는 화면 전환 애니메이션을 구현했습니다.
-- 
 - Kakao 로그인과 **AuthenticationServices**를 활용하여 **Apple 로그인**을 구현했습니다.
 - WidgetKit을 이용하여 사용자 커스텀이 가능한 `Intent Widget`을 구현했습니다.
 <br>
@@ -176,8 +175,8 @@ struct WalletModel: Hashable {
 - 해결 방법
   - Widget의 View를 그리기 전 Provider에서 해당 위젯에 필요한 데이터를 fetch한 후 entry를 통해 전달해 주었다. 이는 Widget의 특성 때문이었는데, Widget은 static한 상태로 동작하기 때문에 내부에서 새로운 데이터를 받아 적용할 수 없다.
 
-```swif
-tstruct Provider: AppIntentTimelineProvider {
+```swift
+struct Provider: AppIntentTimelineProvider {
     
     init() {
         getData()
