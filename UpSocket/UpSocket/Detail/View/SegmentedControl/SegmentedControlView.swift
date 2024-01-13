@@ -92,7 +92,7 @@ private struct SegmentedControlButtonView: View {
                 {
                     HStack {
                         Text(titles[index])
-                            .frame(width: 45, height: 30)
+                            .frame(width: 35, height: 30)
                     }
                 }
                 .buttonStyle(CustomSegmentButtonStyle())

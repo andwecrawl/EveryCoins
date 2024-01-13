@@ -59,7 +59,7 @@ struct SideView: View {
                 Text("- KRW")
                     .bold()
             }
-            .font(.callout)
+            .padding(5)
             
             HStack {
                 Text("수량")

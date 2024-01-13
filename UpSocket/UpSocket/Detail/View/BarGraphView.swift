@@ -23,7 +23,7 @@ struct BarGraphView: View {
                             
                             Text("\(item.price.formatted())")
                                 .font(.caption2)
-                                .frame(width: graphWidth * 0.3)
+                                .frame(width: graphWidth * 0.4)
                             ZStack(alignment: .leading) {
                                 
                                 let graphSize = CGFloat(item.size) / CGFloat(viewModel.largestAskSize()) * graphWidth

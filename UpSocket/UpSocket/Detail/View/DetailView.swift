@@ -29,6 +29,7 @@ struct DetailView: View {
                         BarGraphView(viewModel: DetailViewModel(coin: viewModel.coin))
                         SideView(price: viewModel.coin.tradePrice.toString())
                     }
+                    .padding(.horizontal)
                 default:
                     WaitingView()
                 }
